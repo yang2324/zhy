@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.anim-show
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation-name:mymove;
+animation-duration:5s;/* 5s表示执行动画的时间，0或不写则无动画效果 */
+
+/* 兼容调试如果animation-name执行，那么-wekit-animation-name则不执行 */
+-webkit-animation-name:mymove;
+-webkit-animation-duration:2s;/* 5s表示执行动画的时间，0或不写则无动画效果 */
+}
+
+@keyframes mymove /* 对应animation-name，里面为执行的动画*/
+{
+from {top:200px;}/*执行动画的初始位置*/
+to {top:0px;}/*动画结束位置*/
+0% {
+opacity: 0.1; /*初始状态 透明度为10%*/
+}
+50% {
+opacity: 0.5; /*中间状态 透明度为50%*/
+}
+100% {
+opacity: 1; /*结尾状态 不透明*/
+}
+}
+
+@-webkit-keyframes mymove/* 对应-webkit-animation-name，里面为执行的动画*/
+{
+from {left:200px;}/*执行动画的初始位置*/
+to {left:0px;}/*动画结束位置*/
+}
+</style>
+</head>
+<body>
+    <div style="height: 2000px;">
+
+    </div>
+
+    <div class="anim">
+        11111
+    </div>
+    
+    <div style="height: 2000px;">
+
+    </div>
+
+    <div class="anim">
+        11111
+    </div>
+
+    <script src="http://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        //滚动监控添加动画
+        var anim = $(".anim");//触发遍历所用的类
+        setTimeout(function(){
+            $(window).scroll(function() {
+                roll();
+            })
+            $(window).resize(function() {
+                roll();
+            })
+            roll();
+        },6)
+
+        function roll() {
+            var oHeight = $(window).height();
+            var ScrVal = $(window).scrollTop();
+            anim.each(function(i) {
+                if (ScrVal + oHeight > anim.eq(i).offset().top - 50 ){
+                    anim.eq(i).addClass("anim-show");
+                }
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{margin: 0;padding: 0;}
+html,body{height:100%;font-family: "微软雅黑";}
+
+.swiper-container{height:100%;margin: 0 auto;text-align: center;background: #eee;width:640px;overflow: hidden;}
+.swiper-slide{overflow: hidden;}
+
+/***************************第一部分****************************/
+.ss1{background: url(../img/2.jpg);background-size: 100% 100%;}
+.ss1 p{font-size: 50px;text-align: center;color: #fff;margin-top: 50px;}
+
+#zhy{width: 300px;height: 300px;border-radius: 50%;margin-top: 50px;}
+ @-webkit-keyframes rowup {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -307px, 0);
+        transform: translate3d(0, -307px, 0);
+    }
+}
+@keyframes rowup {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, -307px, 0);
+        transform: translate3d(0, -307px, 0);
+    }
+}
+.demo-list{width: 350px;margin: 50px auto;position: relative;height: 550px;overflow: hidden;}
+.demo-list .rowup{ -webkit-animation: 10s rowup linear infinite normal;animation: 10s rowup linear infinite normal; position: relative;}
+.item{font-size: 24px;color: #fff;line-height: 40px;}
+
+
+/***************************第二部分****************************/
+.ss2{background: url(../img/5.jpg);background-size: 100% 100%;position: relative;}
+.t_c{width: 200px;height: 160px;}
+.mt140{position: absolute;left: 0;}
+.mt141{position: absolute;right: 0;top: 10%;}
+.mt142{position: absolute;top: 80%;right: 0;}
+.t_c p{font-size: 24px;color: #fff;position: absolute;top: 28%;left: 30px;text-align: center;}
+.wenb{width: 300px;margin: 0 auto;text-align: center;position: absolute;top: 30%;}
+.wenb p{font-size: 30px;color: #fff;text-align: center;}
+#test{width: 200px;min-height: 30px;color: #FFFFFF;font-size: 30px;position: absolute;top: 50%;left: 300px;}
+
+
+/***************************第三部分****************************/
+.ss3{background: url(../img/huihua2.png);background-size: 100% 100%;position: relative;}
+.mt147{font-size: 40px;color: red;margin-top: 30px;margin-left: 50px;}
+.mt148{width: 300px; position: absolute;top: 10%;text-align: center;}
+.mt148 p{font-size: 24px;color: #fff;position: absolute;top: 28%;left: 30px;text-align: center;}
+.mt149{width: 250px;height: 500px;position: absolute;top: 30%;left: 40px; overflow: hidden;z-index: -1;}
+.mt149 img{width: 100%;height: 100%;vertical-align: bottom;}
+
+
+/***************************第四部分****************************/
+.ss4{background: url(../img/1.jpg);background-size: 100% 100%;position: relative;}
+.ss4 .mtp153{font-size: 36px;color: #fff;position: absolute;left: 30px;top: 30px;}
+.mt150{width: 300px;height: 260px; border: 10px solid #fff;position: absolute;top: 10%;left: 10%;}
+.mt151{width: 300px;height: 260px; border: 10px solid #fff;position: absolute;top: 26%;left: 40%;}
+.ss4 img{width: 100%;height: 100%;vertical-align: bottom;}
+.mt152{width: 500px;margin: 0 auto;overflow: hidden;border: 1px solid #fff;font-size: 26px;color: #fff;position: absolute;bottom: 15%;left: 0;right: 0;}
+
+
+/***************************第五部分****************************/
+.ss5{background: url(../img/4.png);background-size: 100% 100%;position: relative;}
+.ss5 .mtp153{font-size: 36px;color: #fff;position: absolute;left: 30px;top: 30px;}
+.mt153{position: absolute;top: 10%;left: 30px;width: 600px;height: 260px;display: flex;justify-content: space-between;}
+.pic2{width: 300px;height: 100%;vertical-align: bottom;border-radius: 16px;}
+.sole{padding:0 15px;}
+.sole h4{font-size: 30px;color: #fff;}
+.sole span{font-size: 26px;color: #fff;}
+.mt154{width: 600px;height: 300px;margin: 0 auto;position: absolute;bottom: 15%;text-align: center;overflow: hidden;left: 0;right: 0;}
+.mt154 img{width: 100%;height: 100%;vertical-align: bottom;text-align: center;z-index: -1;}
+
+
+/***************************第六部分****************************/
+.ss6{position: relative;background: #eee;}
+.ss6 .mtp153{width: 600px;margin: 0 auto;overflow: hidden; font-size: 36px;color: #000000;position: absolute;left: 0;right: 0; top: 50%;}
+
+
+/***************************第七部分****************************/
+.ss7{position: relative;background: #fff;}
