@@ -25,6 +25,48 @@
  
 </head>
 <body>
+	<div class="pages">
+		<div class="musicPlay music-play rotate" play="closed">
+			<img src="img/yy.png">
+		</div>
+		<!--<div class="invMusic" style="display: block;">
+			<audio id="playMusic" preload autoplay="autoplay" muted  src="mp3/Luv%20Letter.mp3"></audio>
+		</div>-->
+		<audio src="mp3/Luv%20Letter.mp3" id="Jaudio" class="media-audio" autoplay preload loop="loop"></audio>  
+	</div>
+	
+	<script>
+	$(function(){
+	  $(document).on('click','.musicPlay',function(){
+	    if($(this).attr('play')== 'opend'){
+	      $(this).addClass('rotate');
+	      $(this).attr('play','closed'); 
+	      document.querySelector('#Jaudio').play();
+	    }else{
+	      $(this).removeClass('rotate');
+	      $(this).attr('play','opend');
+	      document.querySelector('#Jaudio').pause();
+	    }
+	  })
+	})
+	
+		function audioAutoPlay(id){  
+		    var audio = document.getElementById(id),  
+		        play = function(){  
+		            audio.play();  
+		            document.removeEventListener("touchstart",play, false);  
+		        };  
+		    audio.play();  
+		    document.addEventListener("WeixinJSBridgeReady", function () {  
+		        play();  
+		    }, false);  
+		    document.addEventListener('YixinJSBridgeReady', function() {  
+		        play();  
+		    }, false);  
+		    document.addEventListener("touchstart",play, false);  
+		}  
+		audioAutoPlay('Jaudio');  
+	</script>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide ss1">
@@ -117,21 +159,42 @@
       		</div>
       </div>
       <div class="swiper-slide ss6">
-      		<p class="ani t_c mtp153" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">845451258 451215</p>
+      		<div id="clipped-title1"  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+			   <h1>THE LION</h1>
+			</div>
+			 
+			<div id="clipped-title2"  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+			   <h1>King of the Jungle</h1>
+			</div>
+			
+			<p class="ani t_c mtp153" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">845451258 451215</p>
       </div>
-      <div class="swiper-slide ss7"></div>
+      <div class="swiper-slide ss7">
+      		<img  src="img/ncsu.jpg" class="ani pp mtp170" swiper-animate-effect="fadeOut" swiper-animate-duration="0.4s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp171" swiper-animate-effect="fadeOut" swiper-animate-duration="0.6s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp172" swiper-animate-effect="fadeOut" swiper-animate-duration="0.6s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp173" swiper-animate-effect="fadeOut" swiper-animate-duration="0.8" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp174" swiper-animate-effect="fadeOut" swiper-animate-duration="0.8" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp175" swiper-animate-effect="fadeOut" swiper-animate-duration="1" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp176" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp177" swiper-animate-effect="fadeOut" swiper-animate-duration="1.2s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp178" swiper-animate-effect="fadeOut" swiper-animate-duration="1.2s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp179" swiper-animate-effect="fadeOut" swiper-animate-duration="1.4s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp180" swiper-animate-effect="fadeOut" swiper-animate-duration="1.4s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani pp mtp181" swiper-animate-effect="fadeOut" swiper-animate-duration="1.6s" swiper-animate-delay="1s"/>
+      		<img  src="img/ncsu.jpg" class="ani ppMain mtp182" swiper-animate-effect="rotateOut" swiper-animate-duration="2s" swiper-animate-delay="2s"/>
+      		
+      		<p class="ani mtp183" swiper-animate-effect="fadeInUp" swiper-animate-duration="3s" swiper-animate-delay="3s">狗子的猜想</p>
+      </div>
     </div>
   </div>
   
-  	<!--<script src="https://cdn.bootcss.com/Swiper/3.2.5/js/swiper.js"></script>-->
-  	<!--<script type="text/javascript" src="js/swiper.min.js" ></script>
-  	<script type="text/javascript" src="js/swipe.js" ></script>-->
   	<script type="text/javascript" src="js/swipers.js" ></script>
   	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js" ></script>
 	<script>
 		var angle = 0;
 		setInterval(function () {
-		 angle += 3;
+		 angle += 5;
 		 $('#zhy').rotate(angle);
 		}, 100);
 		rotation2();

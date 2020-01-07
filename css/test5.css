@@ -1,14 +1,19 @@
 *{margin: 0;padding: 0;}
 html,body{height:100%;font-family: "微软雅黑";}
 
+.pages{width: 100px;margin: 0 auto; position: fixed;top: 20px;right: -30px;z-index: 1001;}
+.musicPlay{width: 60px;height: 60px;overflow: hidden;}
+/*.musicPlay img{margin-left: 40px;}*/
+
 .swiper-container{height:100%;margin: 0 auto;text-align: center;background: #eee;width:640px;overflow: hidden;}
 .swiper-slide{overflow: hidden;}
+
 
 /***************************第一部分****************************/
 .ss1{background: url(../img/2.jpg);background-size: 100% 100%;overflow: hidden;width: 640px;height: 100%;}
 .ss1 p{font-size: 50px;text-align: center;color: #fff;margin-top: 50px;}
 
-#zhy{width: 300px;height: 300px;border-radius: 50%;margin-top: 50px;}
+#zhy{width: 300px;height: 300px;border-radius: 50%;margin-top: 50px;overflow: hidden;}
  @-webkit-keyframes rowup {
     0% {
         -webkit-transform: translate3d(0, 0, 0);
@@ -31,7 +36,7 @@ html,body{height:100%;font-family: "微软雅黑";}
 }
 .demo-list{width: 350px;margin: 50px auto;position: relative;height: 550px;overflow: hidden;}
 .demo-list .rowup{ -webkit-animation: 10s rowup linear infinite normal;animation: 10s rowup linear infinite normal; position: relative;}
-.item{font-size: 24px;color: #fff;line-height: 40px;}
+.item{font-size: 24px;color: #fff;line-height: 45px;}
 
 
 /***************************第二部分****************************/
@@ -75,6 +80,15 @@ html,body{height:100%;font-family: "微软雅黑";}
 .mt154{width: 600px;height: 300px;margin: 0 auto;position: absolute;bottom: 15%;text-align: center;overflow: hidden;left: 0;right: 0;}
 .mt154 img{width: 100%;height: 100%;vertical-align: bottom;text-align: center;z-index: -1;}
 
+/*叠层文字*/
+#clipped-title1 {background: url(../img/3.jpg)no-repeat center center;background-size: cover; color: #fff;
+  				-webkit-text-fill-color: transparent;-webkit-background-clip: text;}
+#clipped-title2 {background: url(../img/7.jpg)no-repeat top center;background-size: cover; color: #fff;
+  				-webkit-text-fill-color: transparent;-webkit-background-clip: text;cursor: pointer;}
+#clipped-title1 h1 {font-size: 100px;font-family: Anton, sans-serif;text-align: center;margin-top: 40px;
+  				-webkit-transition: text-shadow 1s ease;text-shadow: 0 0 1px rgba(0,0,0,.1);}
+#clipped-title2 h1 {font-size: 60px;font-family: Pacifico, sans-serif;text-align: center;
+  -webkit-transition: text-shadow 1s ease;text-shadow: 0 0 1px rgba(0,0,0,.1);margin-top: 75px;}
 
 /***************************第六部分****************************/
 .ss6{position: relative;background: #eee;}
@@ -82,4 +96,26 @@ html,body{height:100%;font-family: "微软雅黑";}
 
 
 /***************************第七部分****************************/
-.ss7{position: relative;background: #fff;}
+.ss7{background: url(../img/7.jpg);background-size: 100% 100%; position: relative;}
+.ss7 .pp{width: 35px;height: 35px;vertical-align: bottom;border-radius: 50px;}
+
+.mtp170{position: absolute;top: 12%;left: 0;right: 0;margin: 0 auto;}
+.mtp171{position: absolute;top: 10%;left: 200px;}
+.mtp172{position: absolute;top: 10%;right: 200px;}
+
+.mtp173{position: absolute;top: 15%;left: 120px;}
+.mtp174{position: absolute;top: 15%;right: 120px;}
+
+.mtp175{position: absolute;top: 25%;left: 70px;}
+.mtp176{position: absolute;top: 25%;right: 70px;}
+
+.mtp177{position: absolute;top: 35%;left: 120px;}
+.mtp178{position: absolute;top: 35%;right: 120px;}
+
+.mtp179{position: absolute;top: 40%;left: 200px;}
+.mtp180{position: absolute;top: 40%;right: 200px;}
+.mtp181{position: absolute;top: 46%;left: 0;right: 0;margin: 0 auto;}
+
+.ppMain{width: 250px;height: 160px;position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;border: 1px solid rgba(255,255,255,0.8);}
+
+.mtp183{position: absolute;bottom: 20%;right: 30px; max-width: 300px;border: 1px solid #fff;min-height: 30px;font-size: 26px;color: #fff;padding: 20px;}
