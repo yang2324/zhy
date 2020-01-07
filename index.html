@@ -13,9 +13,11 @@
   <meta name="apple-mobile-web-app-title" content="">
   
   <!--<link href="https://cdn.bootcss.com/Swiper/3.2.5/css/swiper.css" rel="stylesheet">-->
-  	<link rel="stylesheet" href="css/swiper.mins.css" />
+  <link rel="stylesheet" href="css/swiper.mins.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/test5.css" />
+  <link rel="stylesheet" href="js/site.min.css" />
+  <link rel="stylesheet" href="css/base.css" />
   
   <script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
   <script type="text/javascript" src="js/jquery.rotate.min.js" ></script>
@@ -27,29 +29,27 @@
 <body>
 	<div class="pages">
 		<div class="musicPlay music-play rotate" play="closed">
-			<img src="img/yy.png">
+			<img src="img/yy.png" id="yyZhy">
 		</div>
-		<!--<div class="invMusic" style="display: block;">
-			<audio id="playMusic" preload autoplay="autoplay" muted  src="mp3/Luv%20Letter.mp3"></audio>
-		</div>-->
 		<audio src="mp3/Luv%20Letter.mp3" id="Jaudio" class="media-audio" autoplay preload loop="loop"></audio>  
 	</div>
 	
 	<script>
 	$(function(){
-	  $(document).on('click','.musicPlay',function(){
-	    if($(this).attr('play')== 'opend'){
-	      $(this).addClass('rotate');
-	      $(this).attr('play','closed'); 
-	      document.querySelector('#Jaudio').play();
-	    }else{
-	      $(this).removeClass('rotate');
-	      $(this).attr('play','opend');
-	      document.querySelector('#Jaudio').pause();
-	    }
-	  })
-	})
-	
+		  $(document).on('click','.musicPlay',function(){
+		    if($(this).attr('play')== 'opend'){
+		      $(this).addClass('rotate');
+		      $(this).attr('play','closed'); 
+		      document.querySelector('#Jaudio').play();
+		    }else{
+		      $(this).removeClass('rotate');
+		      $(this).attr('play','opend');
+		      document.querySelector('#Jaudio').pause();
+		    }
+		  })
+		});
+	</script>
+	<script>
 		function audioAutoPlay(id){  
 		    var audio = document.getElementById(id),  
 		        play = function(){  
@@ -65,7 +65,7 @@
 		    }, false);  
 		    document.addEventListener("touchstart",play, false);  
 		}  
-		audioAutoPlay('Jaudio');  
+		audioAutoPlay('Jaudio'); 
 	</script>
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -124,7 +124,7 @@
       		<p class="ani t_c mt147" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">xiangyu</p>
       		<div class="ani t_c mt148" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
       			<img src="img/huihua4.png" />
-      			<p>xianyu xianyu xianyu xianyu xianyu xianyu</p>
+      			<p>I never thought that I would actually graduate after graduation</p>
       		</div>
       		<div class="ani t_c mt149" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1.2s">
       			<img src="img/4.png" />
@@ -140,18 +140,16 @@
       		</div>
       		
       		<p class="ani t_c mt152" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1.2s">
-      			jinuxnm fjdshf gfjbb ghdjski .
-      			jinuxnm fjdshf gfjbb ghdjski .
-      			jinuxnm fjdshf gfjbb ghdjski .
+      			I found that I seem to know nothing about you, when I want to do something for this memory, but nothing.
       		</p>
       </div>
       <div class="swiper-slide ss5">
       		<p class="ani t_c mtp153" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">xiangzhi</p>
       		<div class="ani t_c mt153" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
-      			<img class="pic2" src="img/ncsu.jpg" />
+      			<img class="pic2" src="img/main.jpg" />
       			<div class="sole">
-      				<h4>sole的合</h4>
-      				<span>dasfsd sfsd sdgds sdgs sdfs sdfgsdasfsd sfsd sdgds sdgs sdfs sdfgsdasfsd sfsd sdgds sdgs sdfs sdfgsdasfsd sfsd sdgds sdgs sdfs sdfgsdasfsd sfsd sdgds sdgs sdfs sdfgs</span>
+      				<h4>The only photo</h4>
+      				<span>It's a pity that the only photo of a person I used to like so much is a graduation photo.You have everything I like</span>
       			</div>
       		</div>
       		<div class="ani t_c mt154" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1s">
@@ -182,21 +180,38 @@
       		<img  src="img/ncsu.jpg" class="ani pp mtp179" swiper-animate-effect="fadeOut" swiper-animate-duration="1.4s" swiper-animate-delay="1s"/>
       		<img  src="img/ncsu.jpg" class="ani pp mtp180" swiper-animate-effect="fadeOut" swiper-animate-duration="1.4s" swiper-animate-delay="1s"/>
       		<img  src="img/ncsu.jpg" class="ani pp mtp181" swiper-animate-effect="fadeOut" swiper-animate-duration="1.6s" swiper-animate-delay="1s"/>
-      		<img  src="img/ncsu.jpg" class="ani ppMain mtp182" swiper-animate-effect="rotateOut" swiper-animate-duration="2s" swiper-animate-delay="2s"/>
+      		<img  src="img/main.jpg" class="ani ppMain mtp182" swiper-animate-effect="rotateOut" swiper-animate-duration="2s" swiper-animate-delay="2s"/>
       		
-      		<p class="ani mtp183" swiper-animate-effect="fadeInUp" swiper-animate-duration="3s" swiper-animate-delay="3s">狗子的猜想</p>
+      		<p class="ani mtp183" swiper-animate-effect="fadeInUp" swiper-animate-duration="3s" swiper-animate-delay="3s">狗子的猜想?</p>
+      </div>
+      
+      <div class="swiper-slide ss8">
+      		<!-- COIDEA:header START -->
+		    <header class="coidea-header">
+		   
+		    </header>
+		    <!-- COIDEA:header END -->
+		    
+		    <!-- COIDEA:demo START -->
+		    <section id="ci-particles">
+		      <canvas id="canvas"></canvas>
+		      <h1 id="headline">唯一</h1>
+		    </section>   
+		    <!-- COIDEA:demo END -->
       </div>
     </div>
   </div>
   
   	<script type="text/javascript" src="js/swipers.js" ></script>
   	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js" ></script>
+  	<script type="text/javascript" src="js/shape-shifter.js" ></script>
+  	<script type="text/javascript" src="js/demo.js" ></script>
 	<script>
 		var angle = 0;
 		setInterval(function () {
 		 angle += 5;
 		 $('#zhy').rotate(angle);
-		}, 100);
+		}, 150);
 		rotation2();
 	</script>
 	<script>

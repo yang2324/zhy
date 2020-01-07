@@ -1,4 +1,4 @@
-	var text = "我有一个梦想我有一个梦想我有一个梦想我有一个梦想";
+	var text = "In love folly is always sweet.In love folly is always sweet.In love folly is always sweet.In love folly is always sweet.In love folly is always sweet.";
     var num = text.length;
 
     var i =0;
@@ -10,4 +10,5 @@
             clearInterval("done");
         }
     }
-    var done=setInterval("show()",100);
+    var done=setInterval("show()",10);
+    
